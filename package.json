@@ -1,7 +1,7 @@
 {
   "name": "react-render-to-markdown",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
   "license": "MIT",
   "dependencies": {
     "fbjs": "0.8.16",
