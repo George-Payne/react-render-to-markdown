@@ -7,16 +7,28 @@
 This renderer allows you to write react and have it render out to a markdown file.
 
 
-## Why
+## How to use
 
-Markdown felt like good target for my first renderer:
-- Only need to work with strings
-- Limited API
+Add the dependancy
+``` bash
+
+yarn add react-render-to-markdown
+-- or --
+npm install --save react-render-to-markdown
+
+```
+Then import to your project
+``` javascript
+
+import { render } from './src';
+
+render(<App />, `${__dirname}/README.md`)
+
+```
 
 
 
-
-## Running The project
+## Running the project locally
 
 ``` bash
 

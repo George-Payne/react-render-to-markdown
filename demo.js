@@ -44,14 +44,25 @@ class App extends Component {
                 <Section title={'Introduction'}>
                     {'This renderer allows you to write react and have it render out to a markdown file.'}
                 </Section>
-                <Section title={'Why'}>
-                    {'Markdown felt like good target for my first renderer:'}
-                    <UnorderedList>
-                        <ListItem>{'Only need to work with strings'}</ListItem>
-                        <ListItem>{'Limited API'}</ListItem>
-                    </UnorderedList>
+                <Section title={'How to use'}>
+                {'Add the dependancy'}
+                    <CodeBlock language={'bash'}>
+{`
+yarn add react-render-to-markdown
+-- or --
+npm install --save react-render-to-markdown
+`}
+                    </CodeBlock>
+                    {'Then import to your project'}
+                    <CodeBlock language={'javascript'}>
+{`
+import { render } from './src';
+
+render(<App />, \`\${__dirname}/README.md\`)
+`}
+                    </CodeBlock>
                 </Section>
-                <Section title={'Running The project'}>
+                <Section title={'Running the project locally'}>
                     <CodeBlock language={'bash'}>
 {`
 git clone https://github.com/George-Payne/react-render-to-markdown
